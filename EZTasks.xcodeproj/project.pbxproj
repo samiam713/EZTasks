@@ -1,0 +1,474 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D3337FB3250F1010009A04FB /* InactiveTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3337FB2250F1010009A04FB /* InactiveTask.swift */; };
+		D3337FB7250F104A009A04FB /* TaskGraphBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3337FB4250F104A009A04FB /* TaskGraphBackground.swift */; };
+		D3337FB8250F104A009A04FB /* TaskGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3337FB5250F104A009A04FB /* TaskGraphView.swift */; };
+		D3337FB9250F104A009A04FB /* TaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3337FB6250F104A009A04FB /* TaskView.swift */; };
+		D369A71224B95B850030F227 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D369A71124B95B850030F227 /* AppDelegate.swift */; };
+		D369A71624B95B870030F227 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D369A71524B95B870030F227 /* Assets.xcassets */; };
+		D369A71924B95B870030F227 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D369A71824B95B870030F227 /* Preview Assets.xcassets */; };
+		D369A71C24B95B870030F227 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D369A71A24B95B870030F227 /* Main.storyboard */; };
+		D369A72624B972C40030F227 /* ActiveTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = D369A72524B972C40030F227 /* ActiveTask.swift */; };
+		D369A72E24B97F890030F227 /* TaskGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = D369A72D24B97F890030F227 /* TaskGraph.swift */; };
+		D369A73024B982940030F227 /* FileSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D369A72F24B982940030F227 /* FileSystem.swift */; };
+		D369A73524B986400030F227 /* RecurringTaskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D369A73424B986400030F227 /* RecurringTaskManager.swift */; };
+		D369A73824B988740030F227 /* RecurringTaskPlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = D369A73724B988740030F227 /* RecurringTaskPlan.swift */; };
+		D369A73E24B993640030F227 /* RTPlanManipulator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D369A73D24B993640030F227 /* RTPlanManipulator.swift */; };
+		D369A74024B993B10030F227 /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = D369A73F24B993B10030F227 /* MainMenu.swift */; };
+		D39FB950250E754600C976D0 /* RTPlansManipulator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39FB94F250E754600C976D0 /* RTPlansManipulator.swift */; };
+		D39FB952250E7F3600C976D0 /* RTTodayPlansManipulator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39FB951250E7F3600C976D0 /* RTTodayPlansManipulator.swift */; };
+		D3CE31AC2505EAEA00BB0291 /* RecurringTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CE31AB2505EAEA00BB0291 /* RecurringTask.swift */; };
+		D3F8E5472506B40C001BFA30 /* TaskHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F8E5462506B40C001BFA30 /* TaskHistory.swift */; };
+		D3F8E5492506C576001BFA30 /* TaskHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F8E5482506C576001BFA30 /* TaskHistoryView.swift */; };
+		D3F8E54B2506C9A0001BFA30 /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F8E54A2506C9A0001BFA30 /* DateFormatter.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D3337FB2250F1010009A04FB /* InactiveTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InactiveTask.swift; path = EZTasks/TaskHistory/InactiveTask.swift; sourceTree = SOURCE_ROOT; };
+		D3337FB4250F104A009A04FB /* TaskGraphBackground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TaskGraphBackground.swift; path = EZTasks/Views/TaskGraphViews/TaskGraphBackground.swift; sourceTree = SOURCE_ROOT; };
+		D3337FB5250F104A009A04FB /* TaskGraphView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TaskGraphView.swift; path = EZTasks/Views/TaskGraphViews/TaskGraphView.swift; sourceTree = SOURCE_ROOT; };
+		D3337FB6250F104A009A04FB /* TaskView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TaskView.swift; path = EZTasks/Views/TaskGraphViews/TaskView.swift; sourceTree = SOURCE_ROOT; };
+		D369A70E24B95B850030F227 /* EZTasks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EZTasks.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D369A71124B95B850030F227 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D369A71524B95B870030F227 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D369A71824B95B870030F227 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D369A71B24B95B870030F227 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D369A71D24B95B870030F227 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D369A71E24B95B870030F227 /* EZTasks.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EZTasks.entitlements; sourceTree = "<group>"; };
+		D369A72524B972C40030F227 /* ActiveTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveTask.swift; sourceTree = "<group>"; };
+		D369A72D24B97F890030F227 /* TaskGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskGraph.swift; sourceTree = "<group>"; };
+		D369A72F24B982940030F227 /* FileSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileSystem.swift; sourceTree = "<group>"; };
+		D369A73424B986400030F227 /* RecurringTaskManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecurringTaskManager.swift; sourceTree = "<group>"; };
+		D369A73724B988740030F227 /* RecurringTaskPlan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecurringTaskPlan.swift; sourceTree = "<group>"; };
+		D369A73D24B993640030F227 /* RTPlanManipulator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RTPlanManipulator.swift; sourceTree = "<group>"; };
+		D369A73F24B993B10030F227 /* MainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
+		D39FB94F250E754600C976D0 /* RTPlansManipulator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RTPlansManipulator.swift; sourceTree = "<group>"; };
+		D39FB951250E7F3600C976D0 /* RTTodayPlansManipulator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RTTodayPlansManipulator.swift; sourceTree = "<group>"; };
+		D3CE31AB2505EAEA00BB0291 /* RecurringTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecurringTask.swift; sourceTree = "<group>"; };
+		D3F8E5462506B40C001BFA30 /* TaskHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskHistory.swift; sourceTree = "<group>"; };
+		D3F8E5482506C576001BFA30 /* TaskHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskHistoryView.swift; sourceTree = "<group>"; };
+		D3F8E54A2506C9A0001BFA30 /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D369A70B24B95B850030F227 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D3658B572515881200E1C1C5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D369A73F24B993B10030F227 /* MainMenu.swift */,
+				D3658B592515883400E1C1C5 /* TaskGraphViews */,
+				D3658B582515881F00E1C1C5 /* RecurringTasks */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D3658B582515881F00E1C1C5 /* RecurringTasks */ = {
+			isa = PBXGroup;
+			children = (
+				D39FB94F250E754600C976D0 /* RTPlansManipulator.swift */,
+				D369A73D24B993640030F227 /* RTPlanManipulator.swift */,
+				D39FB951250E7F3600C976D0 /* RTTodayPlansManipulator.swift */,
+			);
+			path = RecurringTasks;
+			sourceTree = "<group>";
+		};
+		D3658B592515883400E1C1C5 /* TaskGraphViews */ = {
+			isa = PBXGroup;
+			children = (
+				D3337FB4250F104A009A04FB /* TaskGraphBackground.swift */,
+				D3337FB5250F104A009A04FB /* TaskGraphView.swift */,
+				D3337FB6250F104A009A04FB /* TaskView.swift */,
+			);
+			path = TaskGraphViews;
+			sourceTree = "<group>";
+		};
+		D369A70524B95B850030F227 = {
+			isa = PBXGroup;
+			children = (
+				D369A71024B95B850030F227 /* EZTasks */,
+				D369A70F24B95B850030F227 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D369A70F24B95B850030F227 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D369A70E24B95B850030F227 /* EZTasks.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D369A71024B95B850030F227 /* EZTasks */ = {
+			isa = PBXGroup;
+			children = (
+				D369A71124B95B850030F227 /* AppDelegate.swift */,
+				D369A72F24B982940030F227 /* FileSystem.swift */,
+				D3F8E54A2506C9A0001BFA30 /* DateFormatter.swift */,
+				D3658B572515881200E1C1C5 /* Views */,
+				D39FB954250F0D2400C976D0 /* TaskHistory */,
+				D369A73624B988660030F227 /* RecurringTasks */,
+				D369A72424B9729F0030F227 /* TaskGraph */,
+				D369A71524B95B870030F227 /* Assets.xcassets */,
+				D369A71A24B95B870030F227 /* Main.storyboard */,
+				D369A71D24B95B870030F227 /* Info.plist */,
+				D369A71E24B95B870030F227 /* EZTasks.entitlements */,
+				D369A71724B95B870030F227 /* Preview Content */,
+			);
+			path = EZTasks;
+			sourceTree = "<group>";
+		};
+		D369A71724B95B870030F227 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D369A71824B95B870030F227 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D369A72424B9729F0030F227 /* TaskGraph */ = {
+			isa = PBXGroup;
+			children = (
+				D369A72D24B97F890030F227 /* TaskGraph.swift */,
+				D369A72524B972C40030F227 /* ActiveTask.swift */,
+			);
+			path = TaskGraph;
+			sourceTree = "<group>";
+		};
+		D369A72924B975020030F227 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D3F8E5482506C576001BFA30 /* TaskHistoryView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D369A73624B988660030F227 /* RecurringTasks */ = {
+			isa = PBXGroup;
+			children = (
+				D369A73424B986400030F227 /* RecurringTaskManager.swift */,
+				D369A73724B988740030F227 /* RecurringTaskPlan.swift */,
+				D3CE31AB2505EAEA00BB0291 /* RecurringTask.swift */,
+			);
+			path = RecurringTasks;
+			sourceTree = "<group>";
+		};
+		D39FB954250F0D2400C976D0 /* TaskHistory */ = {
+			isa = PBXGroup;
+			children = (
+				D3F8E5462506B40C001BFA30 /* TaskHistory.swift */,
+				D3337FB2250F1010009A04FB /* InactiveTask.swift */,
+				D369A72924B975020030F227 /* Views */,
+			);
+			path = TaskHistory;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D369A70D24B95B850030F227 /* EZTasks */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D369A72124B95B870030F227 /* Build configuration list for PBXNativeTarget "EZTasks" */;
+			buildPhases = (
+				D369A70A24B95B850030F227 /* Sources */,
+				D369A70B24B95B850030F227 /* Frameworks */,
+				D369A70C24B95B850030F227 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EZTasks;
+			productName = EZTasks;
+			productReference = D369A70E24B95B850030F227 /* EZTasks.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D369A70624B95B850030F227 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1200;
+				ORGANIZATIONNAME = "Samuel Donovan";
+				TargetAttributes = {
+					D369A70D24B95B850030F227 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+				};
+			};
+			buildConfigurationList = D369A70924B95B850030F227 /* Build configuration list for PBXProject "EZTasks" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D369A70524B95B850030F227;
+			productRefGroup = D369A70F24B95B850030F227 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D369A70D24B95B850030F227 /* EZTasks */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D369A70C24B95B850030F227 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D369A71C24B95B870030F227 /* Main.storyboard in Resources */,
+				D369A71924B95B870030F227 /* Preview Assets.xcassets in Resources */,
+				D369A71624B95B870030F227 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D369A70A24B95B850030F227 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3337FB8250F104A009A04FB /* TaskGraphView.swift in Sources */,
+				D369A74024B993B10030F227 /* MainMenu.swift in Sources */,
+				D3F8E5492506C576001BFA30 /* TaskHistoryView.swift in Sources */,
+				D3337FB3250F1010009A04FB /* InactiveTask.swift in Sources */,
+				D3337FB7250F104A009A04FB /* TaskGraphBackground.swift in Sources */,
+				D369A73524B986400030F227 /* RecurringTaskManager.swift in Sources */,
+				D369A73824B988740030F227 /* RecurringTaskPlan.swift in Sources */,
+				D369A73E24B993640030F227 /* RTPlanManipulator.swift in Sources */,
+				D3CE31AC2505EAEA00BB0291 /* RecurringTask.swift in Sources */,
+				D3F8E54B2506C9A0001BFA30 /* DateFormatter.swift in Sources */,
+				D39FB950250E754600C976D0 /* RTPlansManipulator.swift in Sources */,
+				D39FB952250E7F3600C976D0 /* RTTodayPlansManipulator.swift in Sources */,
+				D369A73024B982940030F227 /* FileSystem.swift in Sources */,
+				D369A72624B972C40030F227 /* ActiveTask.swift in Sources */,
+				D369A72E24B97F890030F227 /* TaskGraph.swift in Sources */,
+				D369A71224B95B850030F227 /* AppDelegate.swift in Sources */,
+				D3F8E5472506B40C001BFA30 /* TaskHistory.swift in Sources */,
+				D3337FB9250F104A009A04FB /* TaskView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D369A71A24B95B870030F227 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D369A71B24B95B870030F227 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D369A71F24B95B870030F227 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D369A72024B95B870030F227 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		D369A72224B95B870030F227 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = EZTasks/EZTasks.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"EZTasks/Preview Content\"";
+				DEVELOPMENT_TEAM = Y975RXV2SM;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = EZTasks/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.samdonovan.EZTasks;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		D369A72324B95B870030F227 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = EZTasks/EZTasks.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"EZTasks/Preview Content\"";
+				DEVELOPMENT_TEAM = Y975RXV2SM;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = EZTasks/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.samdonovan.EZTasks;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D369A70924B95B850030F227 /* Build configuration list for PBXProject "EZTasks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D369A71F24B95B870030F227 /* Debug */,
+				D369A72024B95B870030F227 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D369A72124B95B870030F227 /* Build configuration list for PBXNativeTarget "EZTasks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D369A72224B95B870030F227 /* Debug */,
+				D369A72324B95B870030F227 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D369A70624B95B850030F227 /* Project object */;
+}
