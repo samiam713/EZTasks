@@ -15,17 +15,21 @@ struct RecurringTaskPlanManipulator: View {
         HStack {
             VStack {
                 TextField("Name", text: $recurringTaskPlan.name)
+                    .foregroundColor(.white)
+                    .padding()
+                    .background(RoundedRectangle(cornerRadius: 10)
+                    .foregroundColor(.black))
                 Divider()
                 HStack {
                     VStack {
                         if recurringTaskPlan.rangeDecrementable() {
                             Button(action: recurringTaskPlan.decrementRange) {
-                                Text("Decrease Cycle Size")
+                                Text("Decrement Cycle Size")
                             }
                         }
                         if recurringTaskPlan.rangeIncrementable() {
                             Button(action: recurringTaskPlan.incrementRange) {
-                                Text("Increase Cycle Size") // REPLACE ME WITH A IMAGE(SYSTEMNAME: )
+                                Text("Increment Cycle Size") // REPLACE ME WITH A IMAGE(SYSTEMNAME: )
                             }
                         }
                     }

@@ -31,6 +31,7 @@ struct TaskGraphView: View {
                 Spacer()
                 Button("Add Task", action: self.taskGraph.addTask)
                     .padding()
+                Button("WTF", action: self.taskGraph.save)
                 Spacer()
             }
         }

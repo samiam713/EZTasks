@@ -8,9 +8,10 @@
 
 import Foundation
 
-let vocationalTaskGraph = TaskGraph.load("vocation")
+var vocationalTaskGraph: TaskGraph! = TaskGraph.load("vocation")
 let educationalTaskGraph = TaskGraph.load("education")
 let lovingTaskGraph = TaskGraph.load("loving")
+
 class TaskGraph: ObservableObject, Codable {
     static func url(type: String) -> URL {fileSystem.documentsURL.appendingPathComponent(type,isDirectory: false).appendingPathExtension("json")}
     static func load(_ type: String) -> TaskGraph {
@@ -44,13 +45,13 @@ class TaskGraph: ObservableObject, Codable {
         case "education":
             return "Tasks that have to do with you knowing more things"
         case "loving":
-            return "Tasks that God would be happy you completed"
+            return "Tasks that our all-knowing, all-powerful, all-loving Creator would be happy you completed"
         default:
             fatalError()
         }
     }
     
-    deinit {
+    func save() {
         fileSystem.save(this: self, to: url)
     }
         
@@ -179,7 +180,7 @@ class TaskGraph: ObservableObject, Codable {
         
         taskLookup = try container.decode([UUID:ActiveTask].self, forKey: .taskLookup)
         type = try container.decode(String.self, forKey: .type)
-        url = try container.decode(URL.self, forKey: .type)
+        url = try container.decode(URL.self, forKey: .url)
         
         for task in taskLookup.values {
             task.taskGraph = self

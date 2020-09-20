@@ -14,7 +14,7 @@ class FileSystem {
 
     let decoder = JSONDecoder()
     let encoder = JSONEncoder()
-
+    
     func save<T:Codable>(this: T, to: URL) {
         let data = try! encoder.encode(this)
         try! data.write(to: to)

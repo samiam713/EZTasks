@@ -23,9 +23,9 @@ class RecurringTaskManager: ObservableObject, Codable {
     
     func refresh() {objectWillChange.send()}
     
-    init() {print("LOADING NEW")}
+    init() {}
     
-    deinit {
+    func save() {
         fileSystem.save(this: self, to: Self.url)
     }
     

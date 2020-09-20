@@ -24,11 +24,11 @@ class AppManager {
     let window: NSWindow
     let styleMask: NSWindow.StyleMask = [.titled, .closable, .miniaturizable, .resizable, .fullSizeContentView]
     
-    static func getFrame() -> NSRect {NSScreen.main!.frame}
+    let frame = NSScreen.main!.frame
     
     init() {
         self.window = NSWindow(
-            contentRect: Self.getFrame(),
+            contentRect: frame,
             styleMask: styleMask,
             backing: .buffered, defer: false)
         
@@ -38,8 +38,7 @@ class AppManager {
     }
 
     func toView<T:View>(view: T) {
-        let frame = NSWindow.contentRect(forFrameRect: Self.getFrame(), styleMask: styleMask)
-        window.contentViewController = NSHostingController(rootView: view.frame(minWidth: frame.width/2, minHeight: frame.height/2))
+        window.contentViewController = NSHostingController(rootView: view.frame(minWidth: frame.width, minHeight: frame.height*0.9))
     }
 }
 
@@ -59,7 +58,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
-        // Insert code here to tear down your application
+        recurringTaskManager.save()
+        vocationalTaskGraph.save()
+        educationalTaskGraph.save()
+        lovingTaskGraph.save()
+        taskHistory.save()
     }
 
 }

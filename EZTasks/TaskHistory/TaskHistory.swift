@@ -21,7 +21,7 @@ class TaskHistory: Codable, ObservableObject {
     @Published var viewingPage = 0
     
     init(){}
-    deinit {
+    func save() {
         fileSystem.save(this: self, to: Self.url)
     }
     

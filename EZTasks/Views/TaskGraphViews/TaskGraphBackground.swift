@@ -46,7 +46,7 @@ struct TaskGraphBackground: View {
             }
         }
         .strokedPath(.init())
-        .foregroundColor(.purple)
+        .foregroundColor(.blue)
     }
 }
 

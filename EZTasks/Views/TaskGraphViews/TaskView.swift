@@ -53,7 +53,9 @@ struct TaskView: View {
                     .fill(Color.white)
                 RoundedRectangle(cornerRadius: 10)
                     .stroke(lineWidth: 3)
-                    .fill(Color.black)
+                    .fill(
+                        taskGraph.hasSelection() && taskGraph.unsafeGetSelection().children.contains(task.id) ? Color.blue : Color.black
+                    )
             }
         )
             .padding()

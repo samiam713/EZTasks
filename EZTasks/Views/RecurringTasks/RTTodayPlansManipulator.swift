@@ -27,6 +27,7 @@ struct RecurringTaskManipulator: View {
                 recurringTaskManager.completeRecurringTask(recurringTask: self.task)
             }
         }
+        .foregroundColor(.black)
         .padding()
         .background(RoundedRectangle(cornerRadius: 10)
         .foregroundColor(.white))

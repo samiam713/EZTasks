@@ -118,7 +118,7 @@ class ActiveTask: Identifiable, Codable, Hashable, ObservableObject  {
         let container = try decoder.container(keyedBy: Key.self)
         
         id = try container.decode(UUID.self, forKey: .id)
-        name = try container.decode(String.self, forKey: .id)
+        name = try container.decode(String.self, forKey: .name)
         dueDate = try container.decode(Date.self, forKey: .dueDate)
         usesDate = try container.decode(Bool.self, forKey: .usesDate)
         parents = try container.decode(Set<UUID>.self, forKey: .parents)
