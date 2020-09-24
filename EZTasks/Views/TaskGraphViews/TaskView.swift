@@ -21,9 +21,9 @@ struct TaskView: View {
                     Text("Done by:")
                 })
                 if task.getDaysUntilCompletion() < 1 {
-                    Text("\(task.getHoursUntilCompletion()) hours left")
+                    Text("\(task.getHoursUntilCompletion()) hour\(task.getHoursUntilCompletion() != 1 ? "s" : "") left")
                 } else {
-                    Text("\(task.getDaysUntilCompletion()) days left")
+                    Text("\(task.getDaysUntilCompletion()) day\(task.getDaysUntilCompletion() != 1 ? "s" : "") left")
                 }
             }
             Button("\(task.usesDate ? "Stop" : "Start") using date", action: {self.task.usesDate.toggle()})

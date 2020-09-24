@@ -20,26 +20,17 @@ class AppManager {
     
     let currentDayIndex: Int
     let now: Date
-    
-    let window: NSWindow
-    let styleMask: NSWindow.StyleMask = [.titled, .closable, .miniaturizable, .resizable, .fullSizeContentView]
-    
-    let frame = NSScreen.main!.frame
-    
-    init() {
-        self.window = NSWindow(
-            contentRect: frame,
-            styleMask: styleMask,
-            backing: .buffered, defer: false)
         
+    init() {
         self.now = Date()
         let timeInterval = Self.day0.distance(to: now)
         self.currentDayIndex = Int(timeInterval/secondsPerDay)
     }
+}
 
-    func toView<T:View>(view: T) {
-        window.contentViewController = NSHostingController(rootView: view.frame(minWidth: frame.width, minHeight: frame.height*0.9))
-    }
+var windowReference: NSWindow! = nil
+func toView<T:View>(_ view: T) {
+    windowReference.contentView = NSHostingView(rootView: view.frame(maxWidth: .infinity, maxHeight: .infinity))
 }
 
 @NSApplicationMain
@@ -49,12 +40,19 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         appManager = .init()
-        window = appManager.window
-        window.setFrameAutosaveName("Main Window")
+
+        // Create the window and set the content view.
+        window = NSWindow(
+            contentRect: NSScreen.main!.visibleFrame,
+            styleMask: [.titled, .closable, .miniaturizable, .resizable, .fullSizeContentView],
+            backing: .buffered, defer: false)
         window.isReleasedWhenClosed = false
         window.center()
-        appManager.toView(view: MainMenu())
+        window.setFrameAutosaveName("Main Window")
+        windowReference = window
+        toView(MainMenu())
         window.makeKeyAndOrderFront(nil)
+    
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {

@@ -35,7 +35,7 @@
 		D3337FB4250F104A009A04FB /* TaskGraphBackground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TaskGraphBackground.swift; path = EZTasks/Views/TaskGraphViews/TaskGraphBackground.swift; sourceTree = SOURCE_ROOT; };
 		D3337FB5250F104A009A04FB /* TaskGraphView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TaskGraphView.swift; path = EZTasks/Views/TaskGraphViews/TaskGraphView.swift; sourceTree = SOURCE_ROOT; };
 		D3337FB6250F104A009A04FB /* TaskView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TaskView.swift; path = EZTasks/Views/TaskGraphViews/TaskView.swift; sourceTree = SOURCE_ROOT; };
-		D369A70E24B95B850030F227 /* EZTasks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EZTasks.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D369A70E24B95B850030F227 /* Task Graph.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Task Graph.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D369A71124B95B850030F227 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D369A71524B95B870030F227 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D369A71824B95B870030F227 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -109,7 +109,7 @@
 		D369A70F24B95B850030F227 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D369A70E24B95B850030F227 /* EZTasks.app */,
+				D369A70E24B95B850030F227 /* Task Graph.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -181,9 +181,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D369A70D24B95B850030F227 /* EZTasks */ = {
+		D369A70D24B95B850030F227 /* Task Graph */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D369A72124B95B870030F227 /* Build configuration list for PBXNativeTarget "EZTasks" */;
+			buildConfigurationList = D369A72124B95B870030F227 /* Build configuration list for PBXNativeTarget "Task Graph" */;
 			buildPhases = (
 				D369A70A24B95B850030F227 /* Sources */,
 				D369A70B24B95B850030F227 /* Frameworks */,
@@ -193,9 +193,9 @@
 			);
 			dependencies = (
 			);
-			name = EZTasks;
+			name = "Task Graph";
 			productName = EZTasks;
-			productReference = D369A70E24B95B850030F227 /* EZTasks.app */;
+			productReference = D369A70E24B95B850030F227 /* Task Graph.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -213,7 +213,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D369A70924B95B850030F227 /* Build configuration list for PBXProject "EZTasks" */;
+			buildConfigurationList = D369A70924B95B850030F227 /* Build configuration list for PBXProject "Task Graph" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -226,7 +226,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D369A70D24B95B850030F227 /* EZTasks */,
+				D369A70D24B95B850030F227 /* Task Graph */,
 			);
 		};
 /* End PBXProject section */
@@ -417,7 +417,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				MARKETING_VERSION = 2.0;
+				MARKETING_VERSION = 2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.samdonovan.planner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -442,7 +442,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				MARKETING_VERSION = 2.0;
+				MARKETING_VERSION = 2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.samdonovan.planner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -452,7 +452,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D369A70924B95B850030F227 /* Build configuration list for PBXProject "EZTasks" */ = {
+		D369A70924B95B850030F227 /* Build configuration list for PBXProject "Task Graph" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D369A71F24B95B870030F227 /* Debug */,
@@ -461,7 +461,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D369A72124B95B870030F227 /* Build configuration list for PBXNativeTarget "EZTasks" */ = {
+		D369A72124B95B870030F227 /* Build configuration list for PBXNativeTarget "Task Graph" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D369A72224B95B870030F227 /* Debug */,
